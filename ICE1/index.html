@@ -22,22 +22,29 @@
   <p>Jane went to Wyoming over her winter break in 2017. She went cross-country skiing. She also saw a very ugly bison.</p>
   <br>
   <p>The video controls look different in Safari versus Chrome. Chrome shows the play/pause button, volume controls, and other controls.
-  Safari doesn't show these until you press play, and even then, it shows a slightly different version of them. Firefox's version of video controls is also different from the other two. </p>
+  Safari doesn't show these until you press play, and even then, it shows a slightly different version of them. Firefox's version of video controls is also different from the other two.
+  The items in the form are not selected by clicking on the text next to the radio buttons. This is a problem because users will most likely want to click on the text items
+  themselves to select each option. I didn't find any new issues when I validated my code the second time. </p>
 
   <form>
-		Name:
-		<input type="text" name="name" id = "name"><br>
-		<label for="place">Place:</label>
-		<input type="text" name="place" id = "place"><br>
-    <input style="margin-bottom:30px" type="submit" value="submit">
+  		Name:
+  		<input type="text" name="name" id ="name"><br>
+  		<label for="place">Place:</label>
+  		<input type="text" name="place" id = "place"><br>
+      <input style="margin-bottom:30px" type="submit" value="submit"><br>
 
+  		Please enter your choice of the place you want to go for Christmas:<br>
+  		<input type="radio" name="place" value="Wyoming" id="Placechoice1">
+      <label for="Placechoice1">Wyoming</label>
       <br>
-		Please enter your choice of the place you want to go for Christmas:<br>
-		<input type="radio" name="place" value="Wyoming"> Wyoming<br>
-  	<input type="radio" name="place" value="New Orleans"> New Orleans<br>
-  	<input type="radio" name="place" value="Ann Arbor"> Ann Arbor<br>
-    <button style="margin-top:10px" type="submit" value="Click Me">Click Me!</button>
-  </form>
+    	<input type="radio" name="place" value="New Orleans" id="Placechoice2">
+      <label for="Placechoice2">New Orleans</label>
+      <br>
+    	<input type="radio" name="place" value="Ann Arbor" id="Placechoice3">
+      <label for="Placechoice3"> Ann Arbor</label>
+      <br>
+      <button style="margin-top:10px" type="submit" value="Click Me">Click Me!</button>
+    </form>
 
   <table style="margin:0 auto">
       <thead>
