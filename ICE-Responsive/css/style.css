@@ -19,9 +19,9 @@ html, body{
 a.skip:active, a.skip:focus, a.skip:hover {
     position:fixed;
     top: auto;
-    left: auto; 
-	width: auto; 
-	height: auto; 
+    left: auto;
+	width: auto;
+	height: auto;
 	overflow: visible;
 	z-index: 999;
 }
@@ -33,7 +33,7 @@ html, body, header, footer{
 }
 header, footer, .logo {
 	background-color: #211D24;
-	color: #DDDDDA; 
+	color: #DDDDDA;
 }
 body{
 	display: flex;
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6{
 p{
 	font-family: 'Open Sans', sans-serif;
 }
-h1{ 
+h1{
 	font-size: 1.75em;
 }
 h2{
