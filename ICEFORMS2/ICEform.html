@@ -9,9 +9,12 @@
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css">
+
 	</head>
 
 	<body>
+		<script src="js.js"></script>
+
 		<h2 id="title"> Your Dream Job Starts Here... </h2>
 		<form name="application" action="" method="post">
 
@@ -24,25 +27,27 @@
         <fieldset>
 			<legend>Account Information:</legend>
 			<div class="each">
-				<label> First name:<input type="text" name="fname" required   autofocus>
+				<label> First name:<input type="text" name="fname"    autofocus>
 				</label><br>
 			</div>
 
 			<div class="each">
-				<label for="lname"> Last name:</label><input type="text" required name="lname"><br>
+				<label for="lname"> Last name:</label><input type="text"  name="lname"><br>
 			</div>
 
 			<div class="each">
-				<label> Email: <input type="email" name="email" required  placeholder = "iyad@umich.edu"></label><br>
+				<label> Email: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
 			</div>
 
 			<div class="each">
-				<label> Password: <input type="password"  required name="password1" id='password1'></label><br>
+				<label> Password: <input type="password"   name="password1" id='password1'></label><br>
 			</div>
 
 			<div class="each">
-				<label> Confirm Password: *<input type="password" required  name="password2" id='password2' onchange="validatePass(this)"></label><br>
-
+				<label> Confirm Password: *<input type="password"   name="password2" id='password2'></label><br>
+				<div class="errormessage">
+					Two passwords are not the same!
+				</div>
 			</div>
 
 
@@ -55,27 +60,27 @@
 		<fieldset>
 			<legend>Contact Information:</legend>
 			<div class="each">
-				<label>Phone number (Format: +99(99)9999-9999): <input type="text" required pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}"></label><br><br>
+				<label>Phone number (XXX-XXX-XXXX): <input type="tel"  placeholder="(XXX) XXX-XXXX"></label><br><br>
 			</div>
 
 			<div class="each">
-				<label>Country of Citizenship: <select id="country" required class="bfh-countries" data-country="US"></select><br></label><br>
+				<label>Country of Citizenship: <select id="country"  class="bfh-countries" data-country="US"></select><br></label><br>
 			</div>
 
 			<div class="each">
-				<label> Address: <input type="text" id="address" required name="address" size="50" placeholder = "1234 N Wells St"></label><br>
+				<label> Address: <input type="text" id="address"  name="address" size="50" placeholder = "1234 N Wells St"></label><br>
 			</div>
 
 			<div class="each">
-				<label> City: <input type="text" name="city" required  placeholder = "Ann Arbor"></label>
+				<label> City: <input type="text" name="city"   placeholder = "Ann Arbor"></label>
 			</div>
 
 			<div class="each">
-				<label> State: <input type="text" name="state" required placeholder = "MI"></label>
+				<label> State: <input type="text" name="state"  placeholder = "MI"></label>
 			</div>
 
 			<div class="each">
-				<label> Zip code (Format: nnnnn or nnnnn-nnnn): <input type="text" name="Zip code" pattern="(\d{5}([\-]\d{4})?)" required placeholder = "48108"></label><br>
+				<label> Zip code (format: nnnnn or nnnnn-nnnn): <input type="text" name="Zip code" pattern="(\d{5}([\-]\d{4})?)"  placeholder = "48108"></label><br>
 			</div>
 
 		</fieldset><br>
@@ -117,8 +122,8 @@
 			<div id="work">
 				<label>Company Name: <input type="text" name="name" placeholder="Google"></label><br>
 				<label>Job Title: <input type="text" name="title" placeholder="Software Engineer"></label><br>
-				<label>Join Date (Format: DD.MM.YYYY): <input type="date" name="joindate" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}"></label><br>
-				<label>End Date (Format: DD.MM.YYYY): <input type="date" name="enddate" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}"></label><br>
+				<label>Join Date (mm/dd/yyyy): <input type="date" name="joindate" pattern="\d{1,2}/\d{1,2}/\d{4}"></label><br>
+				<label>End Date (mm/dd/yyyy): <input type="date" name="enddate" pattern="\d{1,2}/\d{1,2}/\d{4}"></label><br>
 
 			</div>
 				<!-- Can automatically populate the duration using Javascript -->
@@ -186,9 +191,9 @@
 				<option value="Pittsburgh">
 			</datalist><br>
 
-			Expected Start Date (Format: DD.MM.YYYY): <input type="date" required name="startdate" pattern="(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}"><br>
+			Expected Start Date (mm/dd/yyyy): <input type="date"  name="startdate" pattern="\d{1,2}/\d{1,2}/\d{4}"><br>
 
-			Expected Salary: $<input type="range" required name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"><br/><span id="salary"></span>
+			Expected Salary: $<input type="range"  name="salary" min="40" max="200" step="5" value="100" onchange="updateSalary(this)"><br/><span id="salary"></span>
 			<br>
 
 			<label>Personal Website/Portfolio: <input type="url" name="website" placeholder="www.mywebsite.com"></label><br>
@@ -207,9 +212,11 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-formhelpers.min.js"></script>
-		<script src="js.js">
 
-		</script>
 
 	</body>
 </html>
+
+
+
+<!-- onchange="validatePass(this)" -->
