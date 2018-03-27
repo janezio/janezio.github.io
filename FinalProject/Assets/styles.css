@@ -75,3 +75,7 @@
 #realnav .dropdown:hover .dropdown-content {
     display: block;
 }
+
+img {
+  width: 100%;
+}
