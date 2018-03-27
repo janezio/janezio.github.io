@@ -28,6 +28,13 @@
   font-weight: 100;
 }
 
+
+
+.topheader {
+  color: white;
+  display: inline-flex;
+  align-self: center;
+}
 /* NAV */
 
 #realnav ul {
@@ -86,37 +93,65 @@ img {
   width: 100%;
 }
 
-
+/* WHITE */
 .color_0 {color: #FFFFFF;}
 .backcolor_0 {background-color: #FFFFFF;}
 .color_1 {color: #FFFFFF;}
 .backcolor_1 {background-color: #FFFFFF;}
+
+/* BLACK */
 .color_2 {color: #000000;}
 .backcolor_2 {background-color: #000000;}
+
+/* RED */
 .color_3 {color: #ED1C24;}
 .backcolor_3 {background-color: #ED1C24;}
+
+/* BLUE */
 .color_4 {color: #0088CB;}
 .backcolor_4 {background-color: #0088CB;}
+
+/* YELLOW */
 .color_5 {color: #FFCB05;}
 .backcolor_5 {background-color: #FFCB05;}
+
+/* DARK GREY */
 .color_6 {color: #727272;}
 .backcolor_6 {background-color: #727272;}
+
+/* LIGHT GREY */
 .color_7 {color: #B0B0B0;}
 .backcolor_7 {background-color: #B0B0B0;}
+
+/* WHITE */
 .color_8 {color: #FFFFFF;}
 .backcolor_8 {background-color: #FFFFFF;}
+
+/* DARK GREY */
 .color_9 {color: #727272;}
 .backcolor_9 {background-color: #727272;}
+
+/* LIGHT GREY */
 .color_10 {color: #B0B0B0;}
 .backcolor_10 {background-color: #B0B0B0;}
+
+/* WHITE */
 .color_11 {color: #FFFFFF;}
 .backcolor_11 {background-color: #FFFFFF;}
+
+/* VERY LIGHT GREY */
 .color_12 {color: #D8D8D8;}
 .backcolor_12 {background-color: #D8D8D8;}
+
+/* MEDIUM GREY */
 .color_13 {color: #9A9FA5;}
 .backcolor_13 {background-color: #9A9FA5;}
+
+/* MIDDLE MEDIUM GREY */
 .color_14 {color: #6D7377;}
 .backcolor_14 {background-color: #6D7377;}
+
+
 .color_15 {color: #393F44;}
 .backcolor_15 {background-color: #393F44;}
 .color_16 {color: #9A9FA5;}
