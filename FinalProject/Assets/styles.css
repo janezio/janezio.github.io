@@ -1,0 +1,76 @@
+/* #navdiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #878EAA;
+}
+#navdiv ul li {
+    float: left;
+    background-color: #878EAA;
+}
+#navdiv ul li a {
+    display: block;
+    padding: 14px 16px;
+    background-color: #878EAA;
+    text-align: center;
+    color: #DFEDFA;
+}
+/* Change the link color to #111 (black) on hover */
+/* #navdiv ul li a:hover {
+    background-color: #111;
+} */
+
+
+/* NAV */
+
+#realnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1E2533;
+}
+
+#realnav li {
+    float: left;
+}
+
+#realnav li a, .dropbtn {
+    display: inline-block;
+    color: #DFEDFA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#realnav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #614749;
+}
+
+#realnav li.dropdown {
+    display: inline-block;
+}
+
+#realnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #878EAA;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#realnav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+#realnav .dropdown-content a:hover {background-color: #DFEDFA}
+
+#realnav .dropdown:hover .dropdown-content {
+    display: block;
+}
