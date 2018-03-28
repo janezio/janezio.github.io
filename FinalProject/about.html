@@ -1,18 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://use.typekit.net/vjn2fjp.css">
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
-    <title>About</title>
-  </head>
-  <body>
-    <div>
-      <h2>About</h2>
-      <p>Hello there! My name is Jane Ziolkowski. I'm a Master's Student at the University of Michigan, studying Information Science, specifically Human-Computer Interaction.
-      </p>
-  <!-- Contact / Portfolio Link / Email Link / LinkedIn link / Form -->
-    </div>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://use.typekit.net/vjn2fjp.css">
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
+  <title>About</title>
+</head>
+
+<body>
+  <script src="js.js"></script>
+  <div>
+    <h2>About</h2>
+    <p>Hello there! My name is Jane Ziolkowski. I'm a Master's Student at the University of Michigan, studying Information Science, specifically Human-Computer Interaction.
+    </p>
+  </div>
+  <div>
+    <h2 id="title"> Contact Me Here... </h2>
+    		<form name="application" action="" method="post">
+          <h4><u>Basic Information</u></h4>
+       <div>
+    	</a>
+
+          	<!-- Content -->
+            <fieldset>
+    			<legend>Contact Information:</legend>
+    			<div class="each">
+    				<label> First name:<input type="text" name="fname"    autofocus>
+    				</label><br>
+    			</div>
+
+    			<div class="each">
+    				<label for="lname"> Last name:</label><input type="text"  name="lname"><br>
+    			</div>
+
+          <div class="each">
+            <label>Phone number (XXX-XXX-XXXX): <input type="tel"  placeholder="(XXX) XXX-XXXX"></label><br>
+          </div>
+
+    			<div class="each">
+    				<label> Email: <input type="email" name="email"   placeholder = "iyad@umich.edu"></label><br>
+    			</div>
+
+
+
+    		</fieldset><br>
+
+    		<fieldset>
+    			<legend>Location:</legend>
+
+    			<div class="each">
+    				<label>Country of Citizenship: <select id="country"  class="bfh-countries" data-country="US"></select><br></label>
+    			</div>
+
+    			<div class="each">
+    				<label> State: <input type="text" name="state"  placeholder = "MI"></label>
+    			</div>
+
+    			<div class="each">
+    				<label> Zip code (format: nnnnn or nnnnn-nnnn): <input type="text" name="Zip code" pattern="(\d{5}([\-]\d{4})?)"  placeholder = "48108"></label><br>
+    			</div>
+
+    		</fieldset><br>
+          </div>
+
+
+          <div>
+          <h4><u>Purpose</u></h4>
+
+
+
+          <fieldset>
+    			<legend>Reason For Contact:</legend>
+    			What is the main reason you are reaching out?<br>
+    				<label><input type="checkbox" name="position" value="internship"> Career Advice</label><br>
+    				<label><input type="checkbox" name="position" value="full-time"> Website Suggestion</label><br>
+    				<label><input type="checkbox" name="position" value="part-time"> Personal Note</label><br>
+    			</fieldset>
+
+
+    			<fieldset>
+    			<legend>Website</legend>
+    			What is your personal or company website?<br>
+    			<label>Website: <input type="url" name="website" placeholder="www.mywebsite.com"></label><br>
+
+    			</fieldset>
+    			<br>
+          </div>
+
+    	<input type="submit" value = "Apply">
+
+    	</form>
+
+  </div>
+    <!-- Contact / Portfolio Link / Email Link / LinkedIn link / Form -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-formhelpers.min.js"></script>
+</body>
+
 </html>
