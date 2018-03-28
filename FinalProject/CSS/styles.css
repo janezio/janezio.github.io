@@ -29,6 +29,15 @@
 }
 
 
+/* BACKGROUND PICTURE */
+
+body #main {
+  background-image: url("Images/egret.jpg");
+  background-repeat: no-repeat;
+}
+
+
+/* MAIN HEADER IN NAV */
 
 .topheader {
   color: white;
