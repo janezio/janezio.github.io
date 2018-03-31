@@ -32,8 +32,7 @@
 /* BACKGROUND PICTURE */
 
 body {
-  background-image: url(Images/egret.jpg);
-  background-repeat: no-repeat;
+  background-image: url("Images/egreet.jpg");
 }
 
 
