@@ -28,21 +28,36 @@
   font-weight: 100;
 }
 
-
 /* BACKGROUND PICTURE */
 
 body {
-  background-image: url("Images/egreet.jpg");
+  background-image: url("../Images/egreet.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  padding: 0px;
 }
 
+
+/* BODY ELEMENTS */
+
+#main {
+  padding-left: 10px;
+}
 
 /* MAIN HEADER IN NAV */
 
 .topheader {
   color: white;
-  display: inline-flex;
-  align-self: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+#logo {
+  width: 10%;
+  background-color: #1E2533;
+}
+
 /* NAV */
 
 #realnav ul {
@@ -100,6 +115,70 @@ body {
 img {
   width: 100%;
 }
+
+/* FOOTER */
+
+footer {
+  background-color: #A3ADB6;
+  position: fixed;
+  height:70px;
+  width:100%;
+  bottom: 0;
+}
+
+footer p {
+  display: inline;
+  margin: 20px 10px;
+  padding: 20px 20px;
+  align-self: center;
+}
+/* SOCIAL MEDIA ICONS */
+
+#social {
+  float: right;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+.fa {
+  float: right;
+  background: #3F3D44;
+  color: white;
+  padding: 16px 10px;
+  font-size: 20px;
+  border-radius: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+.fa:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+
+.fa-linkedin:hover {
+  background: #878EAA;
+}
+
+.fa-instagram:hover {
+  background: #614749;
+}
+
+.fa-facebook:hover {
+background: #323845;
+}
+
+
 
 /* WHITE */
 /* .color_0 {color: #FFFFFF;}
