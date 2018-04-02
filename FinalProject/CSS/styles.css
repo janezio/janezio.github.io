@@ -30,9 +30,13 @@
 
 /* BACKGROUND PICTURE */
 
-body {
+.homebody {
   background-image: url("../Images/egreet.jpg");
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #A3ADB6;
+  background-position: center center;
+  background-attachment: fixed;
   background-size: cover;
   margin: 0px;
   padding: 0px;
@@ -45,32 +49,56 @@ body {
   padding-left: 10px;
 }
 
-/* MAIN HEADER IN NAV */
-
-.topheader {
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#logo {
-  width: 10%;
-  background-color: #1E2533;
+.photobody img {
+  size: contain;
+  position: center;
+  background-color: #A3ADB6;
+  position: center center;
+  attachment: fixed;
+  size: cover;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* NAV */
+
+
+
+#realnav {
+  background-color: #1E2533;
+}
+
+#realnav h1 {
+  display: inline-block;
+  color: #BBB5BA;
+  font-family: "roboto-slab";
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  height: 32px;
+}
+
+#logo {
+  /* width: 10%; */
+  float: right;
+  padding: 0;
+  margin-right: 15px;
+}
+
 
 #realnav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #1E2533;
+    display: inline-block;
 }
 
-#realnav li {
+/* #realnav li {
     float: left;
-}
+} */
 
 #realnav li a, .dropbtn {
     display: inline-block;
@@ -129,33 +157,41 @@ footer {
 footer .grid-container {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
 }
 
 footer .item1 {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
 }
 
 footer .item2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  min-width: 200px;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  margin-top: 3px;
 }
 
-/* footer p {
-  display: inline;
-  margin: 20px 10px;
-  padding: 20px 20px;
-  align-self: center;
-} */
+footer .item3 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  min-width: 200px;
+  align-self: auto;
+}
+
+#headshot1 {
+  width: 60px;
+  padding: 2px;
+  margin: 2px;
+  margin-top: 3px;
+  padding-left: 10px;
+  position:inline-block;
+}
+
+#text {
+  position: inline-block;
+}
 /* SOCIAL MEDIA ICONS */
 
-/* #social {
-  float: right;
-  padding-right: 10px;
-  padding-bottom: 10px;
-} */
 
 .fa {
   background: #3F3D44;
@@ -166,7 +202,7 @@ footer .item2 {
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 10px 2px 5px 2px;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
@@ -200,19 +236,45 @@ background: #323845;
       font-size: 20px;
       border-radius: 10px;
       width: 25px;
-      margin: 2px 1px;
+      margin: 15px 1px 2px 1px;
+      /* position: sticky; */
+    }
+    footer .grid-container {
+      grid-gap: 5px;
+    }
+    footer .item2 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      margin-top: 3px;
+      min-width: 190px;
+      padding-bottom: 15px;
+    }
+    footer .item3 {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      min-width: none;
     }
 }
 
-@media only screen and (max-width: 900px) {
-    .fa {
-      padding: 8px 5px;
-      font-size: 20px;
-      border-radius: 10px;
-      width: 25px;
-      margin: 2px 1px;
-    }
+
+
+@media only screen and (min-width:320px) {
+/* smartphones, iPhone, portrait 480x320 phones */
 }
+
+@media only screen and (min-width:641px) {
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+
+@media only screen and (min-width:961px) {
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+
+@media only screen and (min-width:1025px) {
+/* big landscape tablets, laptops, and desktops */
+}
+
+
 
 /* WHITE */
 /* .color_0 {color: #FFFFFF;}
@@ -224,29 +286,6 @@ background: #323845;
 /* .color_2 {color: #000000;}
 .backcolor_2 {background-color: #000000;} */
 
-/* RED */
-/* .color_3 {color: #ED1C24;}
-.backcolor_3 {background-color: #ED1C24;} */
-
-/* BLUE */
-/* .color_4 {color: #0088CB;}
-.backcolor_4 {background-color: #0088CB;} */
-
-/* YELLOW */
-/* .color_5 {color: #FFCB05;}
-.backcolor_5 {background-color: #FFCB05;} */
-
-/* DARK GREY */
-/* .color_6 {color: #727272;}
-.backcolor_6 {background-color: #727272;} */
-
-/* LIGHT GREY */
-/* .color_7 {color: #B0B0B0;} */
-/* .backcolor_7 {background-color: #B0B0B0;}
-
-/* WHITE */
-/* .color_8 {color: #FFFFFF;}
-.backcolor_8 {background-color: #FFFFFF;} */
 
 /* DARK GREY */
 /* .color_9 {color: #727272;}
@@ -255,10 +294,6 @@ background: #323845;
 /* LIGHT GREY */
 /* .color_10 {color: #B0B0B0;}
 .backcolor_10 {background-color: #B0B0B0;} */
-
-/* WHITE */
-/* .color_11 {color: #FFFFFF;}
-.backcolor_11 {background-color: #FFFFFF;} */
 
 /* VERY LIGHT GREY */
 /* .color_12 {color: #D8D8D8;}
@@ -271,47 +306,3 @@ background: #323845;
 /* MIDDLE MEDIUM GREY */
 /* .color_14 {color: #6D7377;}
 .backcolor_14 {background-color: #6D7377;} */
-
-/*
-.color_15 {color: #393F44;}
-.backcolor_15 {background-color: #393F44;}
-.color_16 {color: #9A9FA5;}
-.backcolor_16 {background-color: #9A9FA5;}
-.color_17 {color: #6D7377;}
-.backcolor_17 {background-color: #6D7377;}
-.color_18 {color: #393F44;}
-.backcolor_18 {background-color: #393F44;}
-.color_19 {color: #252F35;}
-.backcolor_19 {background-color: #252F35;}
-.color_20 {color: #000000;}
-.backcolor_20 {background-color: #000000;}
-.color_21 {color: #E8F8FA;}
-.backcolor_21 {background-color: #E8F8FA;} */
-/* .color_22 {color: #BFDFE3;}
-.backcolor_22 {background-color: #BFDFE3;}
-.color_23 {color: #9FD1D6;}
-.backcolor_23 {background-color: #9FD1D6;}
-.color_24 {color: #87C1C7;}
-.backcolor_24 {background-color: #87C1C7;}
-.color_25 {color: #393F44;}
-.backcolor_25 {background-color: #393F44;}
-.color_26 {color: #FFFFFF;}
-.backcolor_26 {background-color: #FFFFFF;} */
-/* .color_27 {color: #F6F6F6;}
-.backcolor_27 {background-color: #F6F6F6;}
-.color_28 {color: #D8D8D8;}
-.backcolor_28 {background-color: #D8D8D8;}
-.color_29 {color: #B1ABAB;}
-.backcolor_29 {background-color: #B1ABAB;}
-.color_30 {color: #918D8D;}
-.backcolor_30 {background-color: #918D8D;}
-.color_31 {color: #F8F8F8;}
-.backcolor_31 {background-color: #F8F8F8;}
-.color_32 {color: #E5F0F1;}
-.backcolor_32 {background-color: #E5F0F1;}
-.color_33 {color: #C8E4E7;}
-.backcolor_33 {background-color: #C8E4E7;}
-.color_34 {color: #8EBABE;}
-.backcolor_34 {background-color: #8EBABE;}
-.color_35 {color: #70B2B9;}
-.backcolor_35 {background-color: #70B2B9;} */
