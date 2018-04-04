@@ -95,7 +95,7 @@ header {
   justify-content: space-between;
 }
 
-#realnav h1 {
+#realnav #janeslist {
   color: #BBB5BA;
   font-family: "roboto-slab";
   font-style: normal;
@@ -107,6 +107,7 @@ header {
   letter-spacing: 2px;
   word-spacing: 10px;
   line-height: 58px;
+  font-size: 23px;
 }
 
 #realnav #logo {
