@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  alert('beginning!')
+  // alert('beginning!')
 
   function validatePass(){
     if ($('#password1').val() !== $('#password2').val()) {
