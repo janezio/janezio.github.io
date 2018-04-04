@@ -1,11 +1,12 @@
 $(document).ready(function(){
-  // alert('beginning!')
+  alert('beginning!')
 
-  // function validatePass(){
-  //   if ($('#password1').val() !== $('#password2').val()) {
-  //     $('.errormessage').show();
-  //   }
-  // }
+  function validatePass(){
+    if ($('#password1').val() !== $('#password2').val()) {
+      $('.errormessage').show();
+    }
+  }
+
 
   $('#password2').on('change',function(){
     if ($('#password2') !== $('#password1')){
