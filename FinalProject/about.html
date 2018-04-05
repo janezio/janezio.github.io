@@ -31,8 +31,8 @@ s<!DOCTYPE html>
 
           </li>
         </ul>
-        <p id="janeslist">JANE'S &#10052; LIST</p>
-        <p id="logo">J&#10052;L</p>
+        <p id="janeslist" class="janeslist">JANE'S &#10052; LIST</p>
+        <p id="logo" class="janeslist">J&#10052;L</p>
       </div>
     </nav>
   </header>
@@ -41,7 +41,7 @@ s<!DOCTYPE html>
     <h3>Hello there! My name is Jane Ziolkowski. I'm a Master's Student at the University of Michigan, studying Information Science, specifically Human-Computer Interaction.
     </h3>
   </div>
-  <div>
+  <div class="pagetext">
     <h2 id="title"> Contact Me Here... </h2>
     		<form name="application" action='https://www.getform.org/f/1ab1c882-0980-4602-9d85-2ffb9162b066' method="POST">
           <h4><u>Basic Information</u></h4>
@@ -106,15 +106,15 @@ s<!DOCTYPE html>
 
 
     			<fieldset>
-    			<legend>Website</legend>
-    			What is your personal or company website?<br>
-    			<label>Website: <input type="url" name="website" placeholder="www.mywebsite.com"></label><br>
-
+    			<legend>Text</legend>
+    			Add your note here:<br>
+    			<!-- <label>Note: <input type="text" name="website" ></label><br> -->
+          <textarea name="textarea" style="width:250px;height:150px;"></textarea>
     			</fieldset>
     			<br>
           </div>
 
-    	<input type="submit" value = "Apply">
+    	<input type="submit" value="Submit">
 
     	</form>
       <p>Credits: Home page background image: https://flic.kr/p/nZczrG
@@ -122,7 +122,7 @@ s<!DOCTYPE html>
   </div>
   <footer>
     <div class="footer flex-container">
-      <div class="item1">
+      <div class="item1 janeslistabout">
         <img id="headshot1" src="Images/headshot_jane_2.png" alt="jane_smiling_headshot">
       </div>
       <div class="item2">

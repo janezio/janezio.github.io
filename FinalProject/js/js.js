@@ -1,18 +1,14 @@
 $(document).ready(function(){
   // alert('beginning!')
 
-  function validatePass(){
-    if ($('#password1').val() !== $('#password2').val()) {
-      $('.errormessage').show();
-    }
-  }
+  $('.janeslist').each(function() {
+    $(this).contents().wrap('<a href="index.html"></a>');
+  });
 
+  $('.janeslistabout').each(function() {
+    $(this).contents().wrap('<a href="about.html"></a>');
+  });
 
-  $('#password2').on('change',function(){
-    if ($('#password2') !== $('#password1')){
-      $('.errormessage').show();
-    }
-  })
 
 
   $("input[type='tel']").each(function(){

@@ -6,6 +6,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+  </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/vjn2fjp.css">
   <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
@@ -13,6 +15,7 @@
 </head>
 
 <body class="homebody">
+  <script src="js/js.js"></script>
   <header>
     <nav>
       <div id="realnav">
@@ -29,21 +32,21 @@
             </div>
           </li>
         </ul>
-        <p id="janeslist">JANE'S &#10052; LIST</p>
-        <p id="logo">J&#10052;L</p>
+        <p id="janeslist" class="janeslist">JANE'S &#10052; LIST</p>
+        <p id="logo" class="janeslist">J&#10052;L</p>
       </div>
     </nav>
   </header>
-  <div class="pagetext">
+  <div class="pagetext hometext">
     <br><br><br><br><br><br><br><br>
-    <p> Welcome to Ann Arbor. Here, I'll be sharing candid advice that will help you survive and thrive during the wintertime.
+    <p id="intropar"> Welcome to Ann Arbor. Here, I'll be sharing candid advice that will help you survive and thrive during the wintertime.
     </p>
   </div>
   </div>
 
   <footer>
     <div class="footer flex-container">
-      <div class="item1">
+      <div class="item1 janeslistabout">
         <img id="headshot1" src="Images/headshot_jane_2.png" alt="jane_smiling_headshot">
       </div>
       <div class="item2">
@@ -57,7 +60,9 @@
       </div>
     </div>
   </footer>
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-formhelpers.min.js"></script>
 </body>
 
 </html>
