@@ -9,7 +9,13 @@ $(document).ready(function(){
     $(this).contents().wrap('<a href="about.html"></a>');
   });
 
-
+  $(function(){
+    $('a').each(function() {
+      if ($(this).prop('href') == window.location.href) {
+        $(this).addClass('current');
+      }
+    });
+  });
 
   $("input[type='tel']").each(function(){
     $(this).on("change keyup paste", function (e) {
