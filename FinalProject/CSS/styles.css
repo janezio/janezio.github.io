@@ -21,6 +21,7 @@
   padding: 0px;
 }
 
+
 .pagebody {
   background-color: #DEE0E7;
   margin: 0px;
@@ -202,8 +203,7 @@ img {
 
 
 #intropar {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-indent: 50px;
+  background-color: #CAC1C2;
 }
 
 /* FOOTER */
@@ -292,7 +292,36 @@ background: #323845;
     width: 100%;
     bottom: 0;
   }
+
+  .pagebody {
+    background-image: none;
+  }
+
+  .pagebody h3 {
+    word-spacing: 1px;
+  }
+
+  .pagebody p {
+    letter-spacing: 1px;
+  }
+
+  .pagetext {
+    padding: 0 10%;
+    padding-top: 32px;
+  }
+
+  .pagetext li {
+    letter-spacing: 1px;
+  }
 }
+
+
+@media only screen and (max-height: 525px) {
+    #intropar {
+    background-color: transparent;
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     #social .fa {
@@ -302,6 +331,25 @@ background: #323845;
       width: 25px;
       height: 20px;
       margin: 5px 1px 2px 1px;
+    }
+    #intropar {
+      word-spacing: 1px;
+      letter-spacing: 0.5px;
+      padding: 3px;
+    }
+    .pagetext {
+      padding: 0 7%;
+      padding-top: 32px;
+    }
+    .pagebody h2 {
+      background-color: #CAC1C2;
+    }
+    .pagetext h3, .pagetext p {
+      text-indent: 30px;
+    }
+    .pagetext h3 {
+      border: 1px dotted grey;
+      padding: 8%;
     }
 }
 
