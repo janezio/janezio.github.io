@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
   </script>
+  <!-- REACT -->
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.typekit.net/vjn2fjp.css">
   <link rel="stylesheet" type="text/css" href="CSS/styles.css" />
@@ -49,7 +53,7 @@
       light. Scientists aren’t sure whether this light <a target="_blank" href="https://verilux.com/sad-light-therapy-seasonal-affective-disorder">produces more serotonin</a> in the brain, or whether it simply <a target="_blank" href="https://verilux.com/blog/light-therapy-for-circadian-rhythm-disorder">helps regulate circadian rhythm</a>,
       but I can tell you that light therapy light works for me and many others.
     </p>
-
+    <div id="reactimage"></div>
   </div>
   <footer>
     <div class="footer flex-container">
@@ -70,6 +74,31 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/bootstrap-formhelpers.min.js"></script>
+  <script type="text/babel">
+
+      function makeYellow(e) {
+    // Call this extremely useful function on an <img>.
+    // The <img> will become a picture of a doggy.
+    e.target.setAttribute('src', 'Images/whiteoutyellow.png');
+    e.target.setAttribute('alt', 'tree in winter');
+    }
+
+    function makeSnow(e) {
+    // Call this extremely useful function on an <img>.
+    // The <img> will become a picture of a doggy.
+    e.target.setAttribute('src', 'Images/whiteout.jpg');
+    e.target.setAttribute('alt', 'whiteout');
+    }
+
+    const snow = (
+    <img id="reactimage"
+    onMouseOver={makeYellow}	onMouseOut={makeSnow} src="Images/whiteout.jpg"
+      alt="whiteout" />
+    );
+
+    ReactDOM.render(snow, document.getElementById('reactimage'));
+
+  </script>
 </body>
 
 </html>
