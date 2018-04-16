@@ -1,15 +1,18 @@
 img {
   padding: 5%;
   border: 5px solid blue;
+  width: 50%;
+  height: auto;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background-image: url("../images/christmas_dark.png");
 }
-
 
 .flex-container {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
 }
