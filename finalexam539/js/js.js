@@ -8,6 +8,7 @@ $(document).ready(function(){
 
     $("#appendimage").click(function(){
         $("#toremove").show();
+        $("#tocenter").css({'margin':'auto auto','height':'auto'})
 
 
     });
