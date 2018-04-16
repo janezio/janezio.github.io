@@ -6,7 +6,7 @@ $(document).ready(function(){
   });
 
   $('.janeslistabout').each(function() {
-    $(this).contents().wrap('<a href="about.html"></a>');
+    $(this).contents().wrap('<a href="about.html" aria-label="about link"></a>');
   });
 
   $(function(){
